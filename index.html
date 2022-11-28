@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Samuel Nummela Porfolio">
+  <meta name="author" content="Samuel Nummela">
+  <meta name="keywords" content="Samuel Nummela, Porfolio, Nummela, ">
+  <title>Portfolio</title>
+</head>
+<body>
+  <main>
+  <nav>
+    <ul>
+      <li><h1>Samuel Nummela</h1></li>
+      <li><a href="https://github.com/Saow" title="Github" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+      <li><a href="https://www.linkedin.com/in/samuel-nummela-1b4a74251/" title="Linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+    </ul>
+  </nav>
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Projektit</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#" target="_blank">Kalatori</a>
+      <a href="https://mega.nz/file/kTNSwYib#Pk-YbpEK2uXrpdBhCjBeB7i8FbV0OGTKW_r5vAPqL20" target="_blank">Python list menu</a>
+    </div>
+</main>
+  <div id="otsikko">
+    <h1>Portfolio</h1>
+  </div>
+
+    <script>
+   
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+      </script>
+  </div>
+</body>
+</html>
